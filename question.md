@@ -272,6 +272,8 @@
 </ul>
 </details>
 
+<h4>스레드 풀과 Executor 프레임워크</h4>
+
 <details>
 <summary>Executor 프레임워크 / 스레드 풀이 필요한 이유</summary>
 <ul>
@@ -307,7 +309,7 @@
 </details>
 
 <details>
-<summary>Executor 예외 정책</summary>
+<summary>Executor 예외 정책 (작업 거절)</summary>
 <ul>
     <li>ThreadPoolExecutor 는 작업을 거절하는 다양한 정책을 제공 -> AbortPolicy, DiscardPolicy, CallerRunsPolicy, 사용자 정의</li>
 </ul>
@@ -323,13 +325,12 @@
 </ul>
 </details>
 
-
 <h4>IO</h4>
 
 <details>
 <summary>IO작업에서 버퍼가 필요한 이유</summary>
 <ul>
-    <li>성능 향상(하드웨어 접근 최소화, 시스템 호출 감소), 읽기/쓰기 속도 불균형 해소, 편의성(줄단위 작업)</li>
+    <li>성능 향상(하드웨어 접근 최소화, 시스템 콜 감소), 읽기/쓰기 속도 불균형 해소, 편의성(줄단위 작업)</li>
 </ul>
 </details>
 
@@ -387,12 +388,12 @@
 </details>
 
 <details>
-<summary>네트워크 예외 (ip, port, timeout)</summary>
+<summary>네트워크 예외 (ip, port, <b>timeout</b>>)</summary>
 <ul>
     <li>UnknownHostException(ip / dns 주소 틀렸을 때)</li>
     <li>ConnectException: Connection refused (ip서버 컴퓨터에 접속은 했지만, 사용하지 않는 포트 번호여서 TCP연결 거절)</li>
-    <li>SocketTimeoutException: Connect timed out / Read timed out (TCP 연결/소켓 타임아웃)</li>
-    <li>외부 서버와 통신을 하는 경우 꼭 커스텀 해서 설정해 줘야 한다 ( socket.connect(InetSocketAddress, time) / socket.setSoTimeout(time) )</li>
+    <li><b>SocketTimeoutException: Connect timed out / Read timed out (TCP 연결/소켓 타임아웃)</b></li>
+    <li><b>외부 서버와 통신을 하는 경우 꼭 커스텀 해서 설정해 줘야 한다 ( socket.connect(InetSocketAddress, time) / socket.setSoTimeout(time) )</b></li>
 </ul>
 </details>
 
@@ -400,7 +401,8 @@
 <summary>네트워크 종료 과정, 특징, 처리</summary>
 <ul>
     <li>4 way handshake</li>
-    <li>정상 종료 : FIN 패킷을 받은 클라이언트의 소켓은 더는 서버를 통해 읽을 데이터가 없다는 의미로 EOF 반환 (읽는 방식에 따라 -1, null, EOFException)</li>
+    <li>정상 전체 흐름 : 서버 -> 클라이언트 FIN, 클->서 ACK, 클->서 FIN+ACK, 서->클 ACK </li>
+    <li>정상 종료 : FIN 패킷을 받은 클라이언트의 소켓은 더는 서버를 통해 읽을 데이터가 없다는 의미로, 블로킹 메소드에서 EOF 반환 (읽는 방식에 따라 -1, null, EOFException)</li>
     <li>강제 종료 : FIN 패킷을 받은 클라이언트의 소켓이 서버에 메서지 전달을 시도하면 PUSH 패킷이 서버에 전달된다. 서버는 TCP 연결에 문제가 있다고 판단, 즉각 연결을 종료하라는 RST 패킷을 클라이언트에 전송. -> 그 후 read, write시도 시 SocketException</li>
     <li>SocketException , EOFException 은 모두 IOException 의 자식임을 기억하자</li>
 </ul>

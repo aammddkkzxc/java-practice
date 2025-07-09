@@ -1,9 +1,8 @@
 ### 자바 학습
 - 자바 개인 학습 레포지토리
-- 김영한의 실전 자바 로드맵을 학습 후 개인적으로 정리하고 싶은 내용들만 포함되어 있습니다
-- 각 디렉토리 content.md파일에 내용 정리
-- 개인적으로 중요도가 더 높거나 헷갈리기 쉽다고 판단한 내용들은 최상위 question.md 파일에 정리
-- 로드맵 링크 : https://www.inflearn.com/roadmaps/744
+- [김영한의 실전 자바 로드맵](https://www.inflearn.com/roadmaps/744)을 학습 후 정리하고 싶은 내용들만 포함되어 있습니다
+- 각 디렉토리 content.md에 내용 정리
+- 중요도가 더 높거나 헷갈리기 쉽다고 판단한 내용들은 최상위 [question.md](https://github.com/aammddkkzxc/java-practice/blob/master/question.md) 파일에 정리
 
 ### 학습 내용
 - 객체지향 및 언어 핵심 **(basic, mid1)**

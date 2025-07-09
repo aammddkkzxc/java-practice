@@ -1,2 +1,59 @@
 # Project exclude paths
+# Build output
+/build/
 /out/
+/target/
+
+# Gradle
+.gradle/
+**/caches/
+**/wrapper/
+!gradle/wrapper/gradle-wrapper.jar  # gradle-wrapper는 필요 시 예외로
+
+# JARs and binary files
+*.jar
+*.war
+*.ear
+*.class
+*.log
+*.hprof
+
+# Dependency directories (optional)
+libs/
+lib/
+
+# IDE settings (IntelliJ / Eclipse / VSCode 등)
+.idea/
+*.iml
+*.ipr
+*.iws
+*.sublime-project
+*.sublime-workspace
+.vscode/
+*.code-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Test reports
+/test-output/
+/reports/
+/surefire-reports/
+
+# Generated files
+gen/
+generated/
+bin/
+tmp/
+
+# Logs
+*.log
+
+# Local environment configs
+.env
+*.local
+*.secret
+*.bak
+*.swp
+*.orig
