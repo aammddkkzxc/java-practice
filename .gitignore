@@ -57,3 +57,8 @@ tmp/
 *.bak
 *.swp
 *.orig
+
+.tmp
+daemon
+jdks
+native

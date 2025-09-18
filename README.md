@@ -4,31 +4,31 @@
 - [content 패키지](https://github.com/aammddkkzxc/java-practice/blob/master/content)에 이론적인 내용, [code 패키지](https://github.com/aammddkkzxc/java-practice/blob/master/code)에 코드 정리
 
 ### 학습 내용
-- 객체지향 및 언어 핵심 **(basic, mid1)**
+- 객체지향 및 언어 핵심 **([basic](https://github.com/aammddkkzxc/java-practice/blob/master/content/1-basic.md), [mid1](https://github.com/aammddkkzxc/java-practice/blob/master/content/2-mid1.md))**
   - 상속, 구현, 다형성
   - 래퍼 클래스
   - 열거형 패턴
   - 중첩 클래스
   - 예외/예외 처리의 필요성, try-with-resources
-- 제네릭, 컬렉션 **(mid2)**
+- 제네릭, 컬렉션 **([mid2](https://github.com/aammddkkzxc/java-practice/blob/master/content/3-mid2.md))**
   - 제네릭과 와일드카드, 타입 이레이저
   - 컬렉션의 시간 복잡도 및 실제 성능 차이
   - 해시 알고리즘
   - 순회, 정렬
-- 멀티스레딩 및 동기화 **(adv1)**
+- 멀티스레딩 및 동기화 **([adv1](https://github.com/aammddkkzxc/java-practice/blob/master/content/4-adv1.md))**
   - 스레드, 스레드 상태, 인터럽트, cpu 양보
   - 메모리 가시성, volatile, happens-before
   - synchronized, Lock, ReentrantLock
   - 생산자-소비자 문제, Object.wait(), Object.notify(), Condition, BlockingQueue
   - 스레드 풀, Executor 프레임워크, 우아한 종료, ThreadPoolExecutor 관리 방식, 스레드 풀 전략, Executor 예외 정책
-- I/O, 네트워크 **(adv2)**
+- I/O, 네트워크 **([adv2](https://github.com/aammddkkzxc/java-practice/blob/master/content/4-adv2.md))**
   - 문자 인코딩, 한글 깨짐
   - 기본/보조 스트림, 버퍼
   - 파일, Files
   - 네트워크, ServerSocket, Socket, 네트워크 자원 정리, shutdownhook, 네트워크 예외, 네트워크 종료
   - HTTP 서버, Servlet, WAS
   - 리플렉션, 어노테이션
-- 람다, 스트림 **(adv3)**
+- 람다, 스트림 **([adv3](https://github.com/aammddkkzxc/java-practice/blob/master/content/4-adv3.md))**
   - 람다, 함수형 인터페이스 스트림 API, Optional
   - Fork/Join, 공용 풀, 병렬 스트림
 
