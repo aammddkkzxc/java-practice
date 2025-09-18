@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/adv1/adv1.iml" filepath="$PROJECT_DIR$/adv1/adv1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/adv2/adv2.iml" filepath="$PROJECT_DIR$/adv2/adv2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/adv3/adv3.iml" filepath="$PROJECT_DIR$/adv3/adv3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/basic/basic.iml" filepath="$PROJECT_DIR$/basic/basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/adv1/adv1.iml" filepath="$PROJECT_DIR$/code/adv1/adv1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/adv2/adv2.iml" filepath="$PROJECT_DIR$/code/adv2/adv2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/adv3/adv3.iml" filepath="$PROJECT_DIR$/code/adv3/adv3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/basic/basic.iml" filepath="$PROJECT_DIR$/code/basic/basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-practice.iml" filepath="$PROJECT_DIR$/java-practice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mid1/mid1.iml" filepath="$PROJECT_DIR$/mid1/mid1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mid2/mid2.iml" filepath="$PROJECT_DIR$/mid2/mid2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/mid1/mid1.iml" filepath="$PROJECT_DIR$/code/mid1/mid1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/mid2/mid2.iml" filepath="$PROJECT_DIR$/code/mid2/mid2.iml" />
     </modules>
   </component>
 </project>
