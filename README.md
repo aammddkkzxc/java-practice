@@ -21,14 +21,14 @@
   - synchronized, Lock, ReentrantLock
   - 생산자-소비자 문제, Object.wait(), Object.notify(), Condition, BlockingQueue
   - 스레드 풀, Executor 프레임워크, 우아한 종료, ThreadPoolExecutor 관리 방식, 스레드 풀 전략, Executor 예외 정책
-- I/O, 네트워크 **([adv2](https://github.com/aammddkkzxc/java-practice/blob/master/content/4-adv2.md))**
+- I/O, 네트워크 **([adv2](https://github.com/aammddkkzxc/java-practice/blob/master/content/5-adv2.md))**
   - 문자 인코딩, 한글 깨짐
   - 기본/보조 스트림, 버퍼
   - 파일, Files
   - 네트워크, ServerSocket, Socket, 네트워크 자원 정리, shutdownhook, 네트워크 예외, 네트워크 종료
   - HTTP 서버, Servlet, WAS
   - 리플렉션, 어노테이션
-- 람다, 스트림 **([adv3](https://github.com/aammddkkzxc/java-practice/blob/master/content/4-adv3.md))**
+- 람다, 스트림 **([adv3](https://github.com/aammddkkzxc/java-practice/blob/master/content/6-adv3.md))**
   - 람다, 함수형 인터페이스 스트림 API, Optional
   - Fork/Join, 공용 풀, 병렬 스트림
 
