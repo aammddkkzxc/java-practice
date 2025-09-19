@@ -1,4 +1,4 @@
-## adv3
+## [adv3](https://github.com/aammddkkzxc/java-practice/tree/master/code/adv3/src)
 
 ### 람다가 필요한 이유
 - 동작 매개변수화

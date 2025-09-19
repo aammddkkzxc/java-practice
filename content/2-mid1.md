@@ -1,4 +1,4 @@
-## mid1
+## [mid1](https://github.com/aammddkkzxc/java-practice/tree/master/code/mid1/src)
 - 불변, 래퍼 클래스, 열거, 중첩 클래스, 예외 처리
 
 #### 불변

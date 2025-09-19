@@ -1,4 +1,5 @@
-## adv2
+## [adv2](https://github.com/aammddkkzxc/java-practice/tree/master/code/adv2/src)
+- 문자 인코딩, IO, 파일, 네트워크, 예외처리/자원정리, 네트워크 예외/종료, http 서버, 리플랙션, 어노테이션
 
 ### 문자 인코딩
 - 한글이 깨지는 가장 큰 2가지 이유
@@ -44,7 +45,7 @@
     - 데이터 스트림 (DataOutputStream / DataInputStream) -> 객체의 각 필드를 개별적으로 저장, 바이트 기반이라 파일 읽고 해석 어려움
     - 객체 스트림과 직렬화 (ObjectOutputStream / ObjectInputStream) `ObjectMemberRepository 클래스`
       - Serializable 인터페이스 구현 (마커 인터페이스), 나름 편리함 `Member 클래스`
-      - 플랫폼 종속( Java), 버전 관리 (클래스 변경) 등 이슈
+      - 플랫폼 종속(Java), 버전 관리 (클래스 변경) 등 이슈
 - 웹 환경에서 데이터를 교환할 때 JSON이 사실상 표준 기술이 됨
 
 ### 파일
@@ -73,7 +74,7 @@
 - IP 주소
   - 자바의 InetAddress 클래스를 사용하면 호스트 이름으로 대상 IP를 찾을 수 있다
   - 시스템의 호스트 파일을 먼저 확인 (C:\Windows\System32\drivers\etc\hosts)
-    - 호스트 파일에 정의되어 있지 않다면, DNS 서버에 요청해서 IP 주소 옫눈더
+    - 호스트 파일에 정의되어 있지 않다면, DNS 서버에 요청해서 IP 주소 얻는다
 - ServerSocket
   - 서버 소켓은 단지 클라이언트와 서버의 TCP 연결만 지원하는 특별한 소켓
 - 클라이언트-서버 연결 과정

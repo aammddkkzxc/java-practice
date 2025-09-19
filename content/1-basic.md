@@ -1,4 +1,4 @@
-## basic
+## [basic](https://github.com/aammddkkzxc/java-practice/tree/master/code/basic/src/poly)
 
 #### 기본형 vs 참조형
 - 기본형은 사용하는 값을 복사해서 전달, 참조형은 참조값을 복사해서 전달. 실제 인스턴스가 복사되는 것이 아니다

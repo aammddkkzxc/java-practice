@@ -1,4 +1,5 @@
-## adv1
+## [adv1](https://github.com/aammddkkzxc/java-practice/tree/master/code/adv1/src/thread)
+- 스레드, 인터럽트, 메모리 가시성, 동기화, 생산자/소비자 문제, CAS연산, Executor프레임워크
 
 ### 스레드 상태
 - 스레드의 start() 메서드는 스레드에 스택 공간을 할당하면서 스레드를 시작하는 아주 특별한 메서드
@@ -73,16 +74,16 @@
   - Lock, ReentrantLock -> synchronized 단점 (무한대기, 공정성 문제) 해결
   - 락 대기 상태를 Blocked상태로 다루지 않고 Waiting/TimedWaiting 상태로 다룬다
     - 인터럽트 사용 가능
-    - 무한대기
-      - 모니터 락과 BLOCKED 상태는 synchronized 에서만 사용된다
-      - BLOCKED 상태의 스레드는 락이 풀릴 때 까지 무한 대기 -> 인터럽트로도 대기 상태를 깨어나지 못함
-    - 공정성
-      -  락이 돌아왔을 때 BLOCKED 상태의 여러 스레드 중에 어떤 스레드가 락을 획득할 지 알 수 없다
-    - ReentrantLock
-      - 여기서 사용하는 락은 객체 내부에 있는 모니터 락이 아니다 Lock 인터페이스와 ReentrantLock 이 제공하는 기능
-      - 다양한 메서드 제공해서 세밀한 제어 가능
-        - lock(), lockInterruptibly(), tryLock(), tryLock(time, unit), unLock()
-      - 공정성 모드 설정
+  - 무한대기
+    - 모니터 락과 BLOCKED 상태는 synchronized 에서만 사용된다
+    - BLOCKED 상태의 스레드는 락이 풀릴 때 까지 무한 대기 -> 인터럽트로도 대기 상태를 깨어나지 못함
+  - 공정성
+    -  락이 돌아왔을 때 BLOCKED 상태의 여러 스레드 중에 어떤 스레드가 락을 획득할 지 알 수 없다
+  - ReentrantLock
+    - 여기서 사용하는 락은 객체 내부에 있는 모니터 락이 아니다 Lock 인터페이스와 ReentrantLock 이 제공하는 기능
+    - 다양한 메서드 제공해서 세밀한 제어 가능
+      - lock(), lockInterruptibly(), tryLock(), tryLock(time, unit), unLock()
+    - 공정성 모드 설정
 - 지역 변수, 불변 객체의 경우 멀티 스레드 문제에서 안전한 이유를 생각해보자
 
 ### 생산자/소비자 문제

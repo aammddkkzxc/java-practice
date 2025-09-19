@@ -1,7 +1,7 @@
 ### 자바 학습
 - 자바 개인 학습 레포지토리
 - [김영한의 실전 자바 로드맵](https://www.inflearn.com/roadmaps/744)을 학습 후 정리하고 싶은 내용들만 포함되어 있습니다
-- [content 패키지](https://github.com/aammddkkzxc/java-practice/blob/master/content)에 이론적인 내용, [code 패키지](https://github.com/aammddkkzxc/java-practice/blob/master/code)에 코드 정리
+- [content 패키지](https://github.com/aammddkkzxc/java-practice/blob/master/content) 이론 정리, [code 패키지](https://github.com/aammddkkzxc/java-practice/blob/master/code) 코드 정리
 
 ### 학습 내용
 - 객체지향 및 언어 핵심 **([basic](https://github.com/aammddkkzxc/java-practice/blob/master/content/1-basic.md), [mid1](https://github.com/aammddkkzxc/java-practice/blob/master/content/2-mid1.md))**
@@ -34,9 +34,9 @@
 
 ### 느낀점
 - 마법처럼 느껴지는 동작들이 결국 모두 자바 코드 동작한다는 것
-- 개발자의 실수를 줄이고 안정성을 보장하기 위한 제약과 원칙이 중요하다
-- 이해도를 높이고 유연하며 편리한 구조를 위한 기술, 디자인 패턴, 그리고 철학이 반영됨을 깨달음
-- 기존 방식의 한계를 극복하고 문제를 해결하는 자바의 발전 과정을 알 수 있었다
+- 개발자의 실수를 줄이고 안정성을 보장하기 위한 제약과 원칙이 중요
+- 유연하며 편리한 구조를 위한 기술, 디자인 패턴이 반영됨
+- 기존 방식의 한계를 극복하고 문제를 해결하는 자바의 발전 과정
 
 ### 수료증
 - https://www.inflearn.com/certificate/1325255-333308-13007657
